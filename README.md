@@ -63,10 +63,11 @@ cd backend
 ```
 2. Create a `.env` file and add the following content (modify the values as needed):
 ```env
-MONGODB_URI=mongodb://mongoadmin:secret@mongodb:27017/dbname?authSource=admin
-JWT_SECRET=your_jwt_secret_key
-PORT=5001
-```
+MONGO_URI="mongodb+srv://rishabhrajput766:dMg4mHQ5BLhKp21m@cluster0.fmzu6.mongodb.net/new-chatapp?retryWrites=true&w=majority&appName=Cluster0"
+
+PORT=5002
+
+JWT_SECRET=mysecretkey
 > **Note:** Replace `your_jwt_secret_key` with a strong secret key of your choice.
 
 ### Clone the Repository
