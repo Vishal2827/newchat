@@ -73,7 +73,7 @@ JWT_SECRET=mysecretkey
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/iemafzalhassan/full-stack_chatApp.git
+https://github.com/Vishal2827/newchat.git
 ```
 
 ## 🏗️ Build and Run the Application"
@@ -101,7 +101,7 @@ http://localhost
 Follow these simple steps to get the project up and running on your local Host using docker.
 
 ```bash
-git clone https://github.com/iemafzalhassan/full-stack_chatApp.git
+thttps://github.com/Vishal2827/newchat.git
 ```
 
 ```bash
@@ -153,12 +153,12 @@ docker build -t full-stack_backend .
 ### Run the Backend container:
 
 ```bash
-docker run -d --network=full-stack --add-host=host.docker.internal:host-gateway -p 5001:5001 --env-file .env full-stack_backend
+docker run -d --network=full-stack --add-host=host.docker.internal:host-gateway -p 5002:5002 --env-file .env full-stack_backend
 
 ```
 #### This will build and run the backend container, exposing the backendAPI on port 5001.
 
-`Backend API: http://localhost:5001`
+`Backend API: http://localhost:5002`
 
 ### To Verify the conncetion between backend and databse:
 ```bash
