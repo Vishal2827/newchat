@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+  namespace: vishal-chatapp
+spec:
+  replicas: 2
+  selector: 
+   matchLabels:
+    app: frontend
+  template: 
+    metadata:     # this metadata for create the pod 
+        name: frontend-pod
+        namespace: chatapp
+        labels:
+          app: frontend
+    spec:
+      containers:
+        - name:  chatapp-frontend
+          image: vishal2728/chatapp-frontend:latest
+          ports:
+           - containerPort: 80
+          env: 
+           - name: NODE_ENV
+             value: development
